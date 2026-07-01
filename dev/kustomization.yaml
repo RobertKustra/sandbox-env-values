@@ -4,6 +4,6 @@ namespace: dev
 configMapGenerator:
   - name: sandbox-app-values
     files:
-      - sandbox-app.yaml
+      - values.yaml=sandbox-app.yaml
 generatorOptions:
   disableNameSuffixHash: true
