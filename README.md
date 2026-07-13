@@ -4,8 +4,9 @@ Environment-specific values for Sandbox deployments.
 
 ## Structure
 
-- dev/ - values for the development environment
-- test/ - values for the test environment
-- prod/ - values for production
+- base/ - common Helm values shared by all environments
+- overlays/dev/ - environment overlay for development
+- overlays/test/ - environment overlay for testing
+- overlays/prod/ - environment overlay for production
 
-These files are consumed by Flux through the HelmRelease definitions in the cluster-config repository.
+Each overlay directory includes the shared base and adds only environment-specific overrides. Flux consumes the overlay paths from the cluster-config repository.
