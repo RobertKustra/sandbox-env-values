@@ -1,0 +1,5 @@
+master:
+  persistence:
+    enabled: true
+    size: 8Gi
+    storageClass: standard
