@@ -4,8 +4,8 @@ configMapGenerator:
   - name: sandbox-nginx-values-base
     files:
       - values.yaml=common-values.yaml
-  - name: redis-values-base
+  - name: sandbox-redis-values-base
     files:
-      - values.yaml=redis-values.yaml
+      - values.yaml=sandbox-redis-values.yaml
 generatorOptions:
   disableNameSuffixHash: true
