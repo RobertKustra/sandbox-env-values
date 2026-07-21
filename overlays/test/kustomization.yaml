@@ -4,9 +4,9 @@ namespace: test
 resources:
   - ../../base
 configMapGenerator:
-  - name: sandbox-app-values-env
+  - name: sandbox-nginx-values-env
     files:
-      - values.yaml=sandbox-app.yaml
+      - values.yaml=sandbox-nginx.yaml
   - name: redis-values-env
     files:
       - values.yaml=redis-values.yaml
