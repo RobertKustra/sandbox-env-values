@@ -10,5 +10,8 @@ configMapGenerator:
   - name: sandbox-redis-values-env
     files:
       - values.yaml=sandbox-redis-values.yaml
+  - name: sandbox-ai-consumer-values-env
+    files:
+      - values.yaml=sandbox-ai-consumer-values.yaml
 generatorOptions:
   disableNameSuffixHash: true
