@@ -4,6 +4,8 @@ image:
   repository: ghcr.io/robertkustra/dev/sandbox-ai-consumer
   tag: "0.1.1"
   pullPolicy: IfNotPresent
+  pullSecrets:
+    - name: ghcr-pull-secret
 
 service:
   enabled: false
