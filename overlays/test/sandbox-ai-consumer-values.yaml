@@ -1,3 +1,6 @@
+image:
+  tag: "0.2.0"
+  pullPolicy: IfNotPresent
 env:
   config:
     VLLM_STRESS: "true"
