@@ -6,3 +6,4 @@ env:
   config:
     VLLM_STRESS: "false"
     VLLM_REPEAT_MINUTES: "5"
+    VLLM_PROMPT: "Who are you? How do you feel about the future of AI in society? Write a short poem about it."
