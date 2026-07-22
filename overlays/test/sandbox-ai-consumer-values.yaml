@@ -4,6 +4,6 @@ image:
 env:
   config:
     VLLM_STRESS: "true"
-    VLLM_COUNT: "30"
-    VLLM_PARALLEL: "6"
-    VLLM_REPEAT_MINUTES: "10"
+    VLLM_COUNT: "100"
+    VLLM_PARALLEL: "8"
+    VLLM_REPEAT_MINUTES: "1"
