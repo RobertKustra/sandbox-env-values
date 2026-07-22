@@ -15,8 +15,10 @@ Each overlay directory includes the shared base and adds only environment-specif
 
 - sandbox-nginx values: base `common-values.yaml` + overlay `sandbox-nginx.yaml`
 - sandbox-redis values: base `sandbox-redis-values.yaml` + overlay `sandbox-redis-values.yaml`
+- sandbox-ai-consumer values: base `sandbox-ai-consumer-values.yaml` + overlay `sandbox-ai-consumer-values.yaml`
 
 Generated ConfigMap names used by HelmRelease manifests:
 
 - `sandbox-nginx-values-base` and `sandbox-nginx-values-env`
 - `sandbox-redis-values-base` and `sandbox-redis-values-env`
+- `sandbox-ai-consumer-values-base` and `sandbox-ai-consumer-values-env`

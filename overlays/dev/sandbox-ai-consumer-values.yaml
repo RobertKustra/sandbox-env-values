@@ -1,0 +1,4 @@
+env:
+  config:
+    VLLM_STRESS: "false"
+    VLLM_REPEAT_MINUTES: "5"
