@@ -3,7 +3,8 @@ image:
   pullPolicy: IfNotPresent
 env:
   config:
-    VLLM_STRESS: "true"
+    VLLM_STRESS: "false"
     VLLM_COUNT: "100"
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
+    VLLM_PROMPT: "Will you replace humanity?"
