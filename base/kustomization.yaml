@@ -3,7 +3,7 @@ kind: Kustomization
 configMapGenerator:
   - name: sandbox-nginx-values-base
     files:
-      - values.yaml=common-values.yaml
+      - values.yaml=nginx-values.yaml
   - name: sandbox-redis-values-base
     files:
       - values.yaml=sandbox-redis-values.yaml

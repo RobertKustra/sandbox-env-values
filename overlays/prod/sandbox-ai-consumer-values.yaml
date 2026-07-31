@@ -1,5 +1,6 @@
 image:
-  tag: "0.2.1"
+  repository: ghcr.io/robertkustra/prod/sandbox-ai-consumer
+  tag: "0.2.2"
   pullPolicy: IfNotPresent
 env:
   config:
