@@ -1,5 +1,5 @@
 image:
-  tag: "0.2.2" # {"$imagepolicy": "flux-system:sandbox-ai-consumer-dev:tag"}
+  tag: "0.2.2"
   pullPolicy: IfNotPresent
 env:
   config:

@@ -22,3 +22,11 @@ Generated ConfigMap names used by HelmRelease manifests:
 - `sandbox-nginx-values-base` and `sandbox-nginx-values-env`
 - `sandbox-redis-values-base` and `sandbox-redis-values-env`
 - `sandbox-ai-consumer-values-base` and `sandbox-ai-consumer-values-env`
+
+## Image automation
+
+Flux image automation is enabled only for `dev` and `prod` overlays.
+
+- `overlays/dev/` follows the `flux-system:sandbox-ai-consumer-dev` image policy.
+- `overlays/prod/` follows the `flux-system:sandbox-ai-consumer-prod` image policy.
+- `overlays/test/` is managed manually and does not participate in image automation.
