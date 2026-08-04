@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/robertkustra/prod/sandbox-ai-consumer
-  tag: "0.2.2" # {"$imagepolicy": "flux-system:sandbox-ai-consumer-dev:tag"}
+  tag: "0.2.2" # {"$imagepolicy": "dev:sandbox-ai-consumer-dev:tag"}
 env:
   config:
     VLLM_STRESS: "false"
