@@ -8,3 +8,11 @@ env:
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
     VLLM_PROMPT: "Tell a not-so-funny joke about computer scientists."
+
+resources:
+  requests:
+    cpu: "50m"
+    memory: 128Mi
+  limits:
+    cpu: "250m"
+    memory: 256Mi
