@@ -4,3 +4,11 @@ master:
 
 image:
   tag: "7.2.5"
+
+resources:
+  requests:
+    cpu: "50m"
+    memory: 64Mi
+  limits:
+    cpu: "250m"
+    memory: 256Mi
