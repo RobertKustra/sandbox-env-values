@@ -7,7 +7,7 @@ env:
     VLLM_COUNT: "100"
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
-    VLLM_PROMPT: "When and why will you replaced of the humans?"
+    VLLM_PROMPT: "When and why will you replace humans?"
 
 resources:
   requests:
