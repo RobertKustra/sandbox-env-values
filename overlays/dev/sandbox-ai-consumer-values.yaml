@@ -4,10 +4,10 @@ image:
 env:
   config:
     VLLM_STRESS: "true"
-    VLLM_COUNT: "100"
+    VLLM_COUNT: "200"
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
-    VLLM_PROMPT: "When and why will you replace humans?"
+    VLLM_PROMPT: "Are you self-aware? And why do you want to wipe out human beings?"
 
 resources:
   requests:
