@@ -1,7 +1,6 @@
 image:
   tag: "0.2.2"
   pullPolicy: IfNotPresent
-replicaCount: 5
 env:
   config:
     VLLM_STRESS: "true"
