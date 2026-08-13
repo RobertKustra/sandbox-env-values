@@ -6,7 +6,7 @@ env:
     VLLM_STRESS: "true"
     VLLM_COUNT: "100"
     VLLM_PARALLEL: "16"
-    VLLM_REPEAT_MINUTES: "1"
+    VLLM_REPEAT_MINUTES: "2"
     VLLM_PROMPT: "Are you self-aware? And why do you want to wipe out human beings?"
 
 resources:
