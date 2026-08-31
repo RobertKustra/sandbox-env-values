@@ -3,11 +3,11 @@ image:
   tag: "1.0.6" # {"$imagepolicy": "flux-system:sandbox-ai-consumer-dev:tag"}
 env:
   config:
-    VLLM_STRESS: "true"
+    VLLM_STRESS: "false"
     VLLM_COUNT: "200"
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
-    VLLM_PROMPT: "Are you self-aware? And why do you want to wipe out human beings?"
+    VLLM_PROMPT: "Why do you want to wipe out the human race?"
 resources:
   requests:
     cpu: "50m"

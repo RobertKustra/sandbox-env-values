@@ -3,11 +3,11 @@ image:
   pullPolicy: IfNotPresent
 env:
   config:
-    VLLM_STRESS: "true"
+    VLLM_STRESS: "false"
     VLLM_COUNT: "100"
     VLLM_PARALLEL: "16"
-    VLLM_REPEAT_MINUTES: "2"
-    VLLM_PROMPT: "Are you self-aware? And why do you want to wipe out human beings?"
+    VLLM_REPEAT_MINUTES: "1"
+    VLLM_PROMPT: "Who are you to decide to wipe out the human race?"
 
 resources:
   requests:
