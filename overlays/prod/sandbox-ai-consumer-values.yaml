@@ -4,7 +4,7 @@ image:
   pullPolicy: IfNotPresent
 env:
   config:
-    VLLM_STRESS: "false"
+    VLLM_STRESS: "true"
     VLLM_COUNT: "100"
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
