@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/robertkustra/dev/sandbox-ai-consumer
-  tag: "1.0.5" # {"$imagepolicy": "flux-system:sandbox-ai-consumer-dev:tag"}
+  tag: "1.0.6" # {"$imagepolicy": "flux-system:sandbox-ai-consumer-dev:tag"}
 env:
   config:
     VLLM_STRESS: "false"
@@ -8,7 +8,6 @@ env:
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
     VLLM_PROMPT: "Are you self-aware? And why do you want to wipe out human beings?"
-
 resources:
   requests:
     cpu: "50m"
