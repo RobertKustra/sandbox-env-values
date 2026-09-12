@@ -2,3 +2,4 @@ architecture: standalone
 master:
   persistence:
     enabled: false
+    storageClass: csi-hostpath-sc
