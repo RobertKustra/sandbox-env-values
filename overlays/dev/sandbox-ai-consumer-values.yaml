@@ -8,6 +8,7 @@ env:
     VLLM_PARALLEL: "16"
     VLLM_REPEAT_MINUTES: "1"
     VLLM_PROMPT: "Why do you want to wipe out the human race?"
+    LANGFUSE_TRACING_ENVIRONMENT: dev
 resources:
   requests:
     cpu: "50m"

@@ -3,6 +3,7 @@ image:
   pullPolicy: IfNotPresent
 env:
   config:
+    LANGFUSE_TRACING_ENVIRONMENT: test
     VLLM_STRESS: "false"
     VLLM_COUNT: "100"
     VLLM_PARALLEL: "16"

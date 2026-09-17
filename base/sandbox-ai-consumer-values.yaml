@@ -19,3 +19,7 @@ env:
     VLLM_PARALLEL: "8"
     VLLM_REPEAT_MINUTES: "5"
     VLLM_PROMPT: "Who are you?"
+    LANGFUSE_BASE_URL: http://langfuse-web.langfuse.svc.cluster.local:3000
+  secretRefs:
+    - name: sandbox-ai-consumer-langfuse
+      optional: true
