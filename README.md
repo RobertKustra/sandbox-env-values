@@ -23,6 +23,19 @@ Generated ConfigMap names used by HelmRelease manifests:
 - `sandbox-redis-values-base` and `sandbox-redis-values-env`
 - `sandbox-ai-consumer-values-base` and `sandbox-ai-consumer-values-env`
 
+## Langfuse credentials
+
+The AI consumer reads Langfuse project credentials from the optional `sandbox-ai-consumer-langfuse` Secret in its environment namespace. Create a project and API keys in Langfuse, then create the Secret without storing the values in Git:
+
+```bash
+kubectl create secret generic sandbox-ai-consumer-langfuse \
+	--namespace=dev \
+	--from-literal=LANGFUSE_PUBLIC_KEY='<public-key>' \
+	--from-literal=LANGFUSE_SECRET_KEY='<secret-key>'
+```
+
+Without this Secret the consumer continues to call vLLM, but tracing remains disabled. For persistent clusters, provide the same keys through SOPS or an external secret manager instead of an imperative Secret.
+
 ## Image automation
 
 Flux image automation is enabled only for `dev` and `prod` overlays.
