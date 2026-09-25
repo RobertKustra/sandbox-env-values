@@ -1,0 +1,19 @@
+image:
+  tag: "0.2.2"
+  pullPolicy: IfNotPresent
+env:
+  config:
+    LANGFUSE_TRACING_ENVIRONMENT: test
+    VLLM_STRESS: "false"
+    VLLM_COUNT: "100"
+    VLLM_PARALLEL: "16"
+    VLLM_REPEAT_MINUTES: "1"
+    VLLM_PROMPT: "Who are you to decide to wipe out the human race?"
+
+resources:
+  requests:
+    cpu: "50m"
+    memory: 128Mi
+  limits:
+    cpu: "250m"
+    memory: 256Mi
