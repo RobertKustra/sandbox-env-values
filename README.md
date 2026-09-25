@@ -4,13 +4,11 @@ Environment-specific values for Sandbox deployments.
 
 ## Structure
 
-- `namespaces/base/` - shared Namespace manifest
-- `namespaces/overlays/<env>/` - environment-specific Namespace name, labels, and annotations
 - `sandbox-nginx/base/` and `sandbox-nginx/overlays/<env>/` - nginx values
 - `sandbox-redis/base/` and `sandbox-redis/overlays/<env>/` - Redis values
 - `sandbox-ai-consumer/base/` and `sandbox-ai-consumer/overlays/<env>/` - AI consumer values
 
-Each module owns its base and environment overlays. Flux reconciles the Namespace module first, then the application values modules, and finally the workloads from `sandbox-cluster-config`.
+Each application module owns its base and environment overlays. Namespace definitions and their Flux stages live in `sandbox-cluster-config/namespaces`.
 
 ## Current values sets
 

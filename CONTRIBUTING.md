@@ -10,7 +10,6 @@ This repository follows a mixed release model for image tags:
 ## Working on values
 
 - Keep shared values in `<module>/base/` and environment overrides in `<module>/overlays/<env>/`.
-- Keep Namespace metadata in `namespaces/base/` and `namespaces/overlays/<env>/`.
 - Preserve the `imagepolicy` setter comments on `dev` and `prod` image tags.
 - Do not add image automation setters to `test` unless the release policy changes.
 
