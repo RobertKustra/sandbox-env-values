@@ -1,6 +1,0 @@
-master:
-  persistence:
-    enabled: false
-
-image:
-  tag: "7.2.5"
